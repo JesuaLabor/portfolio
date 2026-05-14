@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/7f6e161267.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="assets/images/log.png" alt="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Jesua</span> <br> Labor from Kalilangan <br>Bukidnon</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------about--------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/image2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, I'm Jesua Labor, a passionate web developer with a knack for creating dynamic, responsive,
+                        and user-friendly websites. With [X] years of experience in the industry, I've honed my skills
+                        in various web technologies and frameworks, always striving to stay at the forefront of the
+                        ever-evolving digital landscape.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>UI/UX Design Training at Youtube</li>
+                            <li><span>2023 - Current</span><br>Project Manager in a Capstone Project</li>
+                            <li><span>[Year]</span><br>Junior Developer at [Company]</li>
+                            <li><span>[Year]</span><br>Internship at [Company]</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2025</span><br>BSIT Philippine Countryville College Inc.</li>
+                            <li><span>[Year]</span><br>2nd Degree</li>
+                            <li><span>[Year]</span><br>Training on a Company</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------services------------------------------ -->
+    <div id="services">
+        <div class="containers">
+            <h1 class=" sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code-compare"></i>
+                    <h2>Website Design and Development</h2>
+                    <p>Develop websites using modern front-end technologies like HTML, CSS, JavaScript, and frameworks
+                        like React or Vue.js.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Application Development</h2>
+                    <p>Build interactive and dynamic web applications, integrate APIs and third-party services.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>API Development</h2>
+                    <p>Design and implement RESTful APIs using Django REST framework, develop GraphQL APIs with Django.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------porfolio--------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class=" sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/work-1.png">
+                    <div class="layer">
+                        <h3><b>Social Media App</b></h3>
+                        <p> The app connects tou to the talented people arround the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-2.png">
+                    <div class="layer">
+                        <h3><b>Music App</b></h3>
+                        <p>The app connects you the talented people arroundthe world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-3.png">
+                    <div class="layer">
+                        <h3><b>Online Shopping App</b> </h3>
+                        <p>The app connects tou to the talented people arround the world. Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i>robalausej10@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone-flip"></i>09368061993</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/jesua.labor.7/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/images/MY RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name">
+                        <input type="email" name="Email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Jesua. <i class="fa-solid fa-heart"></i> Online Portfolio</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+            event.currentTarget.classList.add("active-tab");
+
+
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxg2fBlgvETOCnANAhLblejFhhoWSkpl1e6Ft5GEzAd5d9T5is2WQUYqgwuFwBehW6Nig/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
