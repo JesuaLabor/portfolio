@@ -4,67 +4,79 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
 body {
     background: #080808;
     color: #fff;
 }
-#header {
+
+logo #header {
     width: 100%;
     height: 100vh;
     background-image: url(../images/background.png);
     background-size: cover;
     background-position: center;
 }
+
 #container {
     padding: 10px 10%;
 }
+
 nav {
     display: flex;
-   align-items: center;
-   justify-content: space-between;
-   flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-.logo{
+
+.logo {
     width: 140px;
 }
+
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
-nav ul li a{
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 25px;
     position: relative;
 }
-nav ul li a::after{
+
+nav ul li a::after {
     content: '';
     width: 0;
-    height: 3px;              
+    height: 3px;
     background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-nav ul li a:hover::after{
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
-.header-text{
+.header-text {
     margin-top: 10%;
     font-size: 30px;
 }
-.header-text h1{
+
+.header-text h1 {
     font-size: 60px;
     margin-top: 20px;
 }
-.header-text h1 span{
+
+.header-text h1 span {
     color: #ff004f;
 }
- /* -----------------about---------------  */
- #about {
+
+/* -----------------about---------------  */
+#about {
     padding: 80px 0 50px;
     color: #ababab;
     margin: auto;
@@ -80,9 +92,10 @@ nav ul li a:hover::after{
 
 .about-col-1 {
     flex-basis: 35%;
-                                                        
+
 }
-p{
+
+p {
     font-size: 20px;
 }
 
@@ -93,93 +106,108 @@ p{
 
 .about-col-2 {
     flex-basis: 60%;
-  
+
 }
-.sub-title{
+
+.sub-title {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
-.tab-title{
+
+.tab-title {
     display: flex;
     margin: 20px 0 40px;
 }
-.tab-links{
+
+.tab-links {
     margin-right: 50px;
     font-size: 25px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{
+
+.tab-links::after {
     content: '';
     width: 0;
     height: 3px;
     background: #ff004f;
     position: absolute;
-    left:0;
+    left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
-.tab-links.active-link::after{
+
+.tab-links.active-link::after {
     width: 100%;
 }
-.tab-contents ul li{
+
+.tab-contents ul li {
     list-style: none;
     margin: 10px 0;
     font-size: 25px;
 }
-.tab-contents ul li span{
+
+.tab-contents ul li span {
     color: #b54769;
     font-size: 18px;
 }
-.tab-contents{
+
+.tab-contents {
     display: none;
 }
-.tab-contents.active-tab{
+
+.tab-contents.active-tab {
     display: block;
 }
 
 /* -----------------------services------------------------ */
 
-#services{
+#services {
     padding: 5px 8%;
 }
-.services-list{
+
+.services-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+
+.services-list div {
     background: #262626;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
-   
+
 }
-.services-list div i{
+
+.services-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+
+.services-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+
+.services-list div a {
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
+
+.services-list div:hover {
     background: #ff004f;
     transform: translateY(-10px);
-    
+
 }
 
 /* -------------portfolio------------------------------ */
@@ -188,23 +216,27 @@ p{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
+
 .work {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
+
 .work img {
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
+
 .layer {
     width: 100%;
     height: 0;
@@ -223,12 +255,14 @@ p{
     font-size: 14px;
     transition: height 0.5s;
 }
+
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 18px;
-    
+
 }
+
 .layer a {
     margin-top: 20px;
     color: #ff004f;
@@ -241,46 +275,55 @@ p{
     border-radius: 50%;
     text-align: center;
 }
+
 .work:hover img {
     transform: scale(1.1);
 }
+
 .work:hover .layer {
     height: 100%;
 }
+
 .btn {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f; 
+    border: 1px solid #ff004f;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #fff;
     transition: background 0.5s, transform 0.5s;
 }
+
 .btn:hover {
     background: #ff004f;
 }
 
 /* --------------------------contact-------------------------- */
-.contact-left{
+.contact-left {
     flex-basis: 35%;
 }
-.contact-right{
+
+.contact-right {
     flex-basis: 60%;
 }
+
 .contact-left p {
     margin-top: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons{
+
+.social-icons {
     margin-top: 30px;
 }
-.social-icons a{
+
+.social-icons a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -288,19 +331,24 @@ p{
     display: inline-block;
     transition: transform 0.5s;
 }
-.social-icons a:hover{
+
+.social-icons a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
-.contact-right form{
+
+.contact-right form {
     width: 100%;
 }
-form input, form textarea{
+
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -311,14 +359,16 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
-form .btn2{
+
+form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 
 }
-.copyright{
+
+.copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -327,10 +377,12 @@ form .btn2{
     margin-top: 20px;
 
 }
-.copyright i{
+
+.copyright i {
     color: #ff004f;
 }
-#msg{
+
+#msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
